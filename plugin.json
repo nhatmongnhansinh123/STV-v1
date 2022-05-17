@@ -1,19 +1,21 @@
 {
     "metadata": {
+        "name": "STV - vqt",
         "author": "VQT",
-        "description": "Chán"
-    },
-    "data": [
-      {
-        "name": "STV v1",
-        "author": "VQT",
-        "path": "https://raw.githubusercontent.com/VQT/vbook-ext/master/STV/plugin.zip",
-        "version": 9,
+        "version": 1,
         "source": "https://sangtacviet.me",
-        "icon": "https://raw.githubusercontent.com/VQT/vbook-ext/master/STV/icon.png",
-        "description": "Đọc truyện trên trang sangtacviet.me",
-        "type": "novel",
-        "locale": "vi_VN"
-      }
-    ]
+        "regexp": "(www.)?sangtacviet.(com|me)/truyen/([a-zA-Z0-9])+/\\d+/\\d+/?$",
+        "description": "Chán STV, bị chặn hoài",
+        "locale": "vi-VN",
+        "language": "javascript",
+        "type": "novel"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "genre.js",
+        "search": "search.js",
+        "detail": "detail.js",
+        "toc": "toc.js",
+        "chap": "chap.js"
+    }
 }
